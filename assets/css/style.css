@@ -471,9 +471,6 @@ body {
 
 .welcome__wrapper {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .welcome__wrapper.active {
@@ -491,24 +488,36 @@ body {
     background-size: cover;
 }
 
+.welcome__header {
+    background: linear-gradient(180deg, #CAE8D5 0%, #EFFFF5 39.43%);
+    border: 1px solid #CAE8D5;
+    box-shadow: 0px 3px 0px 0px #CAE8D5;
+    border-radius: 1.25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 .welcome__logo {
-    max-width: 13.125rem;
+    max-width: 10.5rem;
     margin-bottom: 1rem;
 }
 
 .welcome__title {
-    font-size: 3.125rem;
-    font-weight: 900;
+    font-size: 1.875rem;
+    font-weight: 800;
     line-height: 1.1;
-    color: #000;
-    margin-bottom: .5rem;
+    color: #285845;
+    margin-bottom: 1rem;
 }
 
 .welcome__subtitle {
-    font-size: 1.875rem;
+    font-size: 1rem;
     font-weight: 400;
-    color: #000;
-    margin-bottom: 2.5rem;
+    color: #285845;
 }
 
 .welcome__banners {
@@ -918,12 +927,16 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    .welcome__header {
+        margin-bottom: 1.5rem;
+    }
+
     .welcome__title {
-        font-size: 2.25rem;
+        font-size: 1.125rem;
     }
 
     .welcome__subtitle {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .welcome__banner {
